@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 
 class Header extends React.Component {
 	render() {
-		return <h1>{this.props.bodytext}</h1>;
+		return (
+			<div className="header">
+				<h1 className="text-primary text-center">{this.props.text}</h1>
+			</div>
+			);
 	}
 }
 
